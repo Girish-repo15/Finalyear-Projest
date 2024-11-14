@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="50sp"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+<androidx.cardview.widget.CardView
+    android:id="@+id/card"
+    android:layout_width="300dp"
+    android:layout_margin="50sp"
+    app:cardCornerRadius="10dp"
+    app:cardBackgroundColor="#F6F5EE"
+    android:layout_gravity="center"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:textColor="@color/black"
+        android:focusable="false"
+        android:clickable="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:hint="Extracted text"
+            android:focusable="false"
+            android:clickable="false"
+            android:id="@+id/extracted"
+           android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="HardcodedText" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:textColor="@color/black"
+        android:focusable="false"
+        android:clickable="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:hint="Translated text"
+            android:focusable="false"
+            android:clickable="false"
+            android:id="@+id/transulated"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="HardcodedText" />
+    </com.google.android.material.textfield.TextInputLayout>
+<ImageView
+    android:background="#03A9F4"
+    android:id="@+id/translation"
+    android:layout_margin="10dp"
+    android:src="@drawable/speaker"
+    android:layout_width="match_parent"
+    android:layout_height="50sp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50sp">
+        <TextView
+            android:layout_weight="0.5"
+            android:text="Cancel"
+            android:id="@+id/cancel"
+            android:textSize="18sp"
+            android:background="#ED0808"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_weight="0.5"
+            android:text="Copy to \nClipBoard"
+            android:textSize="15sp"
+            android:background="#E4F819"
+            android:id="@+id/clipboard"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+</LinearLayout>
+</androidx.cardview.widget.CardView></ScrollView>

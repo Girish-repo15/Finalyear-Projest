@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    tools:ignore="HardcodedText"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    app:cardBackgroundColor="#F6F5EE"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:padding="5dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:layout_margin="5dp"
+        android:textColor="@color/black"
+        android:text="Translate to Other Languages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:layout_height="wrap_content"
+        >
+        <androidx.cardview.widget.CardView
+            style="@style/card"
+            android:id="@+id/tamil"
+            android:layout_marginEnd="5dp">
+            <TextView
+
+             style="@style/textview"
+                android:text="தமிழ்\nTamil"
+                android:background="#F6F604"
+            />
+        </androidx.cardview.widget.CardView>
+
+
+
+        <androidx.cardview.widget.CardView
+        style="@style/card"
+            android:id="@+id/kannada">
+<TextView
+    style="@style/textview"
+    android:text="ಕನ್ನಡ\nKannada"
+    android:background="#F10404"
+    />
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            style="@style/card"
+            android:id="@+id/telugu"
+            android:layout_marginStart="5dp">
+            <TextView
+
+                style="@style/textview"
+                android:text="తెలుగు\nTelugu"
+                android:background="#70C809"
+                />
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:layout_height="wrap_content"
+            >
+            <androidx.cardview.widget.CardView
+                style="@style/card"
+android:id="@+id/marati"
+                android:layout_marginEnd="5dp">
+                <TextView
+                    style="@style/textview"
+                  android:text="मराठी\nMarathi"
+                    android:background="#FFA500"
+                    />
+            </androidx.cardview.widget.CardView>
+
+
+
+            <androidx.cardview.widget.CardView
+                style="@style/card"
+                android:id="@+id/japenese">
+                <TextView
+                    style="@style/textview"
+                    android:text="日本語\nJapanese"
+                    android:background="#B61616"
+                    />
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                style="@style/card"
+                android:id="@+id/hindi"
+                android:layout_marginStart="5dp">
+                <TextView
+
+                    style="@style/textview"
+                    android:text="हिंदी\nHindi"
+                    android:background="#4863FA"
+                    />
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:layout_height="wrap_content"
+            >
+            <androidx.cardview.widget.CardView
+                style="@style/card"
+                android:id="@+id/french"
+                android:layout_marginEnd="5dp">
+                <TextView
+                    style="@style/textview"
+                    android:text="Français\nFrench"
+                    android:background="#00FFFF"
+                    />
+            </androidx.cardview.widget.CardView>
+
+
+
+            <androidx.cardview.widget.CardView
+                style="@style/card"
+                android:id="@+id/spanish">
+                <TextView
+                    style="@style/textview"
+                    android:text="española\nSpanish"
+                    android:background="#FFBF00"
+                    />
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                style="@style/card"
+                android:id="@+id/urdu"
+                android:layout_marginStart="5dp">
+                <TextView
+
+                    style="@style/textview"
+                    android:text="اردو\nUrdu"
+                    android:background="#4863FA"
+                    />
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+        <androidx.cardview.widget.CardView
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            android:id="@+id/russian"
+            style="@style/card"
+            android:layout_weight="0"
+            android:background="@color/white"
+            android:layout_width="139dp"
+            android:layout_height="72dp"
+            app:cardBackgroundColor="#B57171"
+            tools:ignore="InefficientWeight">
+<TextView
+    android:text=" восточнославянский \n  East Slavic"
+    style="@style/textview"
+    />
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+</LinearLayout>
